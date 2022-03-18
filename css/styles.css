@@ -45,7 +45,19 @@ list-style: none;
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  transition: color 0.4s ease,
+      opocity 0.4s ease;
 }
+
+.sitnav-link:hover{
+  color: #ff7500;
+}
+
+.sitnav-link:active{
+  opacity: 0.6;
+}
+
+
 /* MAIN */
 .main-link{
   font-size: 13px;
@@ -53,7 +65,18 @@ list-style: none;
   color: #fff;
   background-color: #ff7500;
   text-decoration: none;
+  transition: opacity 0.4s ease;
 }
+
+.main-link:hover{
+  opacity: 0.8;
+}
+
+.main-link:active{
+  opacity: 0.6;
+}
+
+
 /* HERO */
 .hero{
   display: flex;
@@ -154,6 +177,20 @@ letter-spacing: 0.5px;
   list-style: none;
 }
 
+.footer-socials a{
+  color: #252420;
+  transition: color 0.4s ease,
+        opacity 0.4s ease;
+}
+
+.footer-socials a:hover{
+  color: #ff7500;
+}
+
+.footer-socials a:active{
+  opacity: 0.6;
+}
+
 .footer-divider{
   background-color: rgba(37, 36, 32, 0.5);
   height: 3px;
@@ -170,4 +207,14 @@ letter-spacing: 0.5px;
 .site-footer-links a{
 text-decoration: none;
 color: #252420;
+transition: color 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.site-footer-links a:hover{
+  color: #ff7500;
+}
+
+.site-footer-links a:focus{
+  opacity: 0.6;
 }
