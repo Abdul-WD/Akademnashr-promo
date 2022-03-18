@@ -5,11 +5,19 @@ body{
   letter-spacing: 0.5px;
 }
 
+*:focus{
+  outline: 2px solid #ff7500;
+  outline-offset: 3px;
+}
+
 /* header */
 .sit-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 5px solid #ff7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #fff;
 }
 
@@ -34,7 +42,8 @@ body{
 .sitenav-list{
   display: flex;
   justify-content: right;
-list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 .sitnav-link{
@@ -65,6 +74,9 @@ list-style: none;
   color: #fff;
   background-color: #ff7500;
   text-decoration: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 4px;
   transition: opacity 0.4s ease;
 }
 
@@ -82,8 +94,10 @@ list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-background-color: #252420;
-color: #fff;
+  background-color: #252420;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .hero-content{
@@ -94,6 +108,7 @@ color: #fff;
   width: 80px;
   height: 3px;
   background-color: #ff7500;
+  border: none;
 }
 .hero-heading{
 font-size: 40px;
@@ -104,21 +119,29 @@ font-family: "Roboto Condensed", "Arial", sans-serif;
 .hero-img{
   width: 510px;
   height: 510px;
+  border-radius: 8px;
 }
 
 /* FEATURES */
+
+.features{
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
+
 .features-heading{
   width: 440px;
-font-size: 72px;
-line-height: 1.2;
-letter-spacing: 0.5px;
-font-family: "Roboto Condensed", "Roboto" "Arial", sans-serif;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  font-family: "Roboto Condensed", "Roboto" "Arial", sans-serif;
 }
 
 .feature-lists{
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  padding: 0;
 }
 
 .feature{
@@ -126,8 +149,12 @@ width: 340px;
 }
 
 .feature-icon-wrapper{
+display: flex;
+justify-content: center;
+align-items: center;
 width: 100px;
 height: 100px;
+border-radius: 50%;
 background-color: rgba(255, 117, 0, 0.2);
 }
 
@@ -149,6 +176,7 @@ letter-spacing: 0.5px;
   align-items: center;
   background-color: #252420;
   color: #fff;
+  border-radius: 12px;
 }
 
 .promo-content{
@@ -160,7 +188,17 @@ letter-spacing: 0.5px;
   font-family: "Roboto Condensed", "Roboto" "Arial", sans-serif;
 }
 
+.promo-img{
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 .site-footer{
+  padding-top: 56px;
+  padding-bottom: 56px;
+
   background-color: #f8f8f8;
 }
 
@@ -172,6 +210,7 @@ letter-spacing: 0.5px;
 
 .footer-socials{
   display: flex;
+  padding: 0;
 }
 .site-footer ul{
   list-style: none;
@@ -193,7 +232,8 @@ letter-spacing: 0.5px;
 
 .footer-divider{
   background-color: rgba(37, 36, 32, 0.5);
-  height: 3px;
+  height: 2px;
+  border 0;
 }
 
 .footer-bottom{
@@ -203,6 +243,7 @@ letter-spacing: 0.5px;
 .site-footer-links{
   width: 224px;
   line-height: 19px;
+  padding: 0;
 }
 .site-footer-links a{
 text-decoration: none;
